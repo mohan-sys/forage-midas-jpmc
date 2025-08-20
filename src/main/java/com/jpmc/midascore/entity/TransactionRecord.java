@@ -26,6 +26,16 @@ public class TransactionRecord {
 
     private LocalDateTime timeStamp;
 
+    private float incentive;
+
+    public float getIncentive() {
+        return incentive;
+    }
+
+    public void setIncentive(float incentive) {
+        this.incentive = incentive;
+    }
+
     protected TransactionRecord(){} // JPA default constructor
 
     public TransactionRecord(UserRecord sender, UserRecord receiver, float amount){
